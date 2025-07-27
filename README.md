@@ -12,7 +12,11 @@ A lightweight tracking pixel proxy for [Umami Analytics](https://umami.is/) - tr
 
 ## Usage
 
-TODO: Docker Compose
+### Running in Docker
+
+```sh
+docker run -e UMAMI_BASE_URL=http://umami:3000 -p 3001:3001 lunyaadev/umami-pixel:latest
+```
 
 ## Environment variables
 
@@ -59,7 +63,7 @@ Any other parameters will be passed through to Umami as custom data fields.
 ### Markdown Files
 
 ```markdown
-![tracker](<your-url>)
+![tracker](your-url)
 ```
 
 ### CLI
