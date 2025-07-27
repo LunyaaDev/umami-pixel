@@ -7,6 +7,9 @@ services:
       UMAMI_BASE_URL: http://umami:3000
     ports:
       - '3001:3001'
+    depends_on:
+      umami:
+        condition: service_healthy
   umami:
     image: ghcr.io/umami-software/umami:postgresql-latest
     ports:
