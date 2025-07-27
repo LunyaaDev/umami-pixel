@@ -20,12 +20,12 @@ docker run -e UMAMI_BASE_URL=http://umami:3000 -p 3001:3001 lunyaadev/umami-pixe
 
 ## Environment variables
 
-| Variable              | Description                                  |
-| --------------------- | -------------------------------------------- |
-| `UMAMI_HOST`          | Base URL of your Umami instance              |
-| `TRUSTED_PROXY_IPS`   | Comma-separated list of allowed proxy IPs    |
-| `PROXY_IP_HEADER`     | Header name to extract client IP from        |
-| `ALLOWED_WEBSITE_IDS` | WebsiteIds allowed to proxy (all if not set) |
+| Variable              | Description                                       |
+| --------------------- | ------------------------------------------------- |
+| `UMAMI_HOST`          | Base URL of your Umami instance                   |
+| `TRUSTED_PROXY_IPS`   | Comma-separated list of allowed proxy IPs / CIDRs |
+| `PROXY_IP_HEADER`     | Header name to extract client IP from             |
+| `ALLOWED_WEBSITE_IDS` | WebsiteIds allowed to proxy (all if not set)      |
 
 ## Tracking Pixel
 

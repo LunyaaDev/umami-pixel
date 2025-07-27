@@ -17,6 +17,9 @@ importers:
       hono:
         specifier: ^4.8.9
         version: 4.8.9
+      ipaddr.js:
+        specifier: ^2.2.0
+        version: 2.2.0
       zod:
         specifier: ^4.0.10
         version: 4.0.10
@@ -219,6 +222,10 @@ packages:
     resolution: {integrity: sha512-ERIxkXMRhUxGV7nS/Af52+j2KL60B1eg+k6cPtgzrGughS+espS9KQ7QO0SMnevtmRlBfAcN0mf1jKtO6j/doA==}
     engines: {node: '>=16.9.0'}
 
+  ipaddr.js@2.2.0:
+    resolution: {integrity: sha512-Ag3wB2o37wslZS19hZqorUnrnzSkpOVy+IiiDEiTqNubEYpYuHWIf6K4psgN2ZWKExS4xhVCrRVfb/wfW8fWJA==}
+    engines: {node: '>= 10'}
+
   resolve-pkg-maps@1.0.0:
     resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
 
@@ -365,6 +372,8 @@ snapshots:
       resolve-pkg-maps: 1.0.0
 
   hono@4.8.9: {}
+
+  ipaddr.js@2.2.0: {}
 
   resolve-pkg-maps@1.0.0: {}
 
