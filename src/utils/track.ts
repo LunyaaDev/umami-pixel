@@ -77,8 +77,6 @@ export const track = async (c: Context) => {
     },
   }
 
-  console.log('Tracking event:', body)
-
   try {
     const res = await fetch(process.env.UMAMI_BASE_URL + '/api/send', {
       method: 'POST',
@@ -87,7 +85,7 @@ export const track = async (c: Context) => {
       },
       body: JSON.stringify(body),
     })
-    console.log('Response:', res)
-    console.log('Response:', await res.text())
-  } catch (error) {}
+  } catch (error) {
+    console.error('Error sending tracking data:', error)
+  }
 }
